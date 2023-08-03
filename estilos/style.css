@@ -271,6 +271,10 @@ footer{
     grid-template-rows:100% ;
     grid-template-columns: 60% 10% 10% 10% 10%;
 
+
+}
+.redes_contacto{
+    z-index: 6;
 }
 .frase_cierre{
     grid-area: p;
@@ -792,9 +796,43 @@ footer{
     padding: 0px 60px;
 }
 
+    /*prueba boostrap  */
+.carrusel-flex{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+} 
+.carrusel-flex{
+    display: grid;
+    grid-template-areas: 
+    "fv1 fv2"
+    "fv3 fv4"
+    ;
+    grid-template-rows:400px 400px ;
+    grid-template-columns:50% 50% ;
+}
+.fotvid1{
+    grid-area: fv1;
+    margin-top: 80px;
+}
+.fotvid2{
+    grid-area: fv2;
+    margin-top: 30px;
+    align-self: flex-end;
     
-
-
+    
+}
+.fotvid3{
+    grid-area: fv3;
+}
+.fotvid4{
+    grid-area: fv4;
+    
+}
 
 @media only screen and (max-width:500px){
 /* modificar encabezado para mobile */
@@ -1040,4 +1078,10 @@ grid-template-columns: 99%;
     justify-items: center;
     text-align: center;
 }
+}
+@media only screen and (max-width:500px){
+    .carrusel-flex{
+        display: flex;
+        flex-direction: column;
+    }
 }
