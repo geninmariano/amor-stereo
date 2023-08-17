@@ -1,0 +1,591 @@
+@media only screen and (max-width:500px){
+    /* modificar encabezado para mobile */
+    header {
+        display: flex;
+         flex-direction: row;
+        
+        
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+       
+    
+    .box_lista{
+        width: 100%;
+        flex-direction: column;
+        display: grid;
+        grid-template-areas: 
+        "  nv"
+        "  nv1"
+        "  nv2"
+        "  nv3"
+        "  nv4"
+        ;
+        grid-template-rows:20px 20px 20px 20px 20px 20px ;
+        grid-template-columns:100%;
+    }
+    nav ul li a {
+        font-size: 0.8rem;
+       
+    }
+    .logo{
+        width: 30%;
+        
+
+    }
+    
+    .in{
+        grid-area: nv;
+      
+       
+        
+    }
+    .bio{
+        grid-area: nv1;
+      
+        
+    }
+    .disc{
+        grid-area: nv2;
+    }
+    .rec{
+        grid-area: nv3;
+    }
+    .fot{
+        grid-area: nv4;
+    
+    }
+    header nav{
+        width: 100%;
+    }
+    
+    .texto_p{
+        font-size: 1.5rem;
+    }
+    .box_lista{
+        margin-left: 0px;
+        margin-right: 10px;
+        
+    }
+}
+}   
+    /* modificar index  para mobile */
+    @media only screen and (max-width:500px){
+    main{    
+        display: flex;
+       
+
+    .medios_imagenes_index{
+        .titulo_index{
+            font-size: 2rem;
+        }
+        .texto_p{
+            font-size: 0.8rem;
+            
+           
+        }
+        .foto_p{
+            width: 90%;
+            height: 90%;
+            margin-left: 10px;
+        }
+        .li a{
+            font-size: 0.5rem;
+        }
+
+            
+    display: grid;
+    grid-template-areas: 
+    "h1"
+    "fotop"
+    "p1"
+    "fotofc"
+    "navfc"
+    "fotovd"
+    "navvd"
+    "fotodis"
+    "navdis"
+    "fotobi"
+    "navbi";
+    grid-template-rows: 50px 200px 150px 250px 50px 300px 50px 300px 50px 300px 50px ;
+    grid-template-columns: 100%;
+    }
+    .titulo_index{
+        grid-area: h1;
+       
+    }
+    .foto_p{
+        grid-area: fotop;
+
+    }
+    .texto_p{
+        grid-area: p1;
+        
+    }
+  
+    .foto_fc{
+        grid-area: fotofc;
+    }
+    .nav-fc{
+        grid-area: navfc;
+        
+    }
+    .foto.dv{
+        grid-area: fotovd;
+    }
+    .nav_vd{
+        grid-area: navvd;
+    }
+    .foto_dis{
+        grid-area: fotodis;
+    }
+    .nav_dis{
+        grid-area: navdis;
+    }
+    .fotobi{
+        grid-area: fotobi;
+    }
+    .nav_bi{
+        grid-area: navbi;
+    }
+
+
+}
+    
+}
+    /* modificar footer para mobile */
+    @media only screen and (max-width:500px){
+
+ footer{
+    text-align: center;
+    align-items: center;
+
+    
+    .redes_contacto{
+
+       
+        display: grid;
+        grid-template-areas: 
+        "p  p p p"
+        "l1 l2 l3 l4";
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 25% 25% 25% 25%;
+    }    
+    .frase_cierre{
+        grid-area: p;
+    }
+    .facebook{
+        grid-area: l1;
+    }
+    .instagram{
+        grid-area: l2;
+    }
+    .twitter{
+        grid-area: l3;
+    }
+    .mail{
+        grid-area: l4;
+    }
+    .frase_cierre{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    
+    }
+}
+    /* adaptar bibliografia mobile */
+    @media only screen and (max-width:500px){
+    main{
+
+       
+    
+    .texto_bibliografia{
+        
+     
+     
+
+    display: grid;
+    grid-template-areas: 
+    "h1"
+    "f1"
+    "p1"
+    "f2"
+    "p2"
+    "f3"
+    "p3"
+    "f4"
+    "p4"
+    "f5"
+    "p5"
+    "f6"
+    "p6"
+    "f7"
+    "p7"
+    "f8"
+    "p8"
+    
+    ;
+    grid-template-rows: 50px 160px 450px 300px 750px 600px 1000px 900px 1100px 1000px 800px 650px 1200px 600px 1850px 650px 1280px;
+    grid-template-columns: 100%;
+    
+    
+    
+    }
+    .texto_bibliografia{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        
+    }
+    .titulo_bibliografia{
+        font-size: 1rem;
+        
+    }
+
+    .foto_01{
+        width: 95%;
+        
+        
+    }
+    
+    
+
+    .foto_02{
+        width: 95%;
+        
+        
+    }   
+    
+    .foto_03{
+        width: 95%;
+        
+    }
+    
+    
+    .foto_04{
+        width: 95%;
+        
+    }
+   
+    .foto_05{
+        width: 95%;
+    
+    }
+   
+    .foto_06{
+        width: 80%;
+        
+
+    }
+    
+    .foto_07{
+        width: 95%;
+        
+    }
+    
+    .foto_08{
+        width: 95%;
+        
+        
+    }
+  
+}
+.texto_bibliografia{
+    .parrafo_1{
+    font-size: 0.9rem;
+    
+    padding: 10px;
+    }
+    .parrafo_2{
+        font-size: 0.9rem;
+    }
+
+    .parrafo_3{
+        font-size: 0.9rem;
+    }
+    .parrafo_4{
+        font-size: 0.9rem;
+    }
+    .parrafo_5{
+        font-size: 0.9rem;
+    }
+    .parrafo_6{
+        font-size: 0.9rem;
+    }
+    .parrafo_7{
+        font-size: 0.9rem;
+    }
+    .parrafo_8{
+        font-size: 0.9rem;
+    }
+
+}
+}
+    
+    /* adaptar discografia a mobile */
+    @media only screen and (max-width:500px){
+    main{
+       
+        .discografia{
+        grid-template-areas: 
+        "t01"
+        "dis1"
+        "dis2"
+        "dis3"
+        "dis4"
+        "dis5"
+        "dis6"
+        "dis7"
+    
+        ;
+        grid-template-rows:30px 450px 500px 650px 550px 650px 680px 700px ;
+        grid-template-columns:100% ;
+    }
+    .discografia{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+       
+    }
+    }
+    main .discografia{
+        .titulo_discografia{
+            font-size: 1.2rem;
+            text-align: center;
+            align-items: center;
+        }
+
+    }
+    main .disco_1{
+        .titulo_1{
+            font-size: 1rem;
+        }
+        .texto_1{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+    
+    main .disco_2{
+        .titulo_2{
+            font-size: 1rem;
+        }
+        .texto_2{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+
+     main .disco_3{
+        .titulo_3{
+            font-size: 1rem;
+        }
+        .texto_3{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+    main .disco_4{
+        .titulo_4{
+            font-size: 1rem;
+        }
+        .texto_4{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+    main .disco_5{
+        .titulo_5{
+            font-size: 1rem;
+        }
+        .texto_5{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+    main .disco_6{
+        .titulo_6{
+            font-size: 1rem;
+        }
+        .texto_6{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+    main .disco_7{
+        .titulo_7{
+            font-size: 1rem;
+        }
+        .texto_7{
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    }
+    
+    
+    
+    
+
+
+}
+    /* videos y recitales */
+    @media only screen and (max-width:500px){
+        main{
+
+            .titulo_videos_recitales{
+                font-size: 1.5rem;
+            }
+         
+        .recitales{
+            display: grid;
+            grid-template-areas: 
+            "h1 "
+            "v1 "
+            "t1" 
+            "v2"
+            "t2"
+            "v3" 
+            "t3" 
+            "v4" 
+            "t4"
+            "v5" 
+            "t5" 
+            "v6" 
+            "t6"
+            ;
+            grid-template-rows: 50px 200px 300px 200px 300px 230px 350px 300px 250px 350px 300px 350px 450px;
+            grid-template-columns: 100%;
+    }
+   
+    
+
+    }
+
+
+    .recitales{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        .texto_r1997{
+            font-size: 0.8rem;
+        }
+       
+       
+        .texto_mtv{
+            font-size: 0.8rem;
+        
+        }
+        .texto_puente{
+            font-size: 0.8rem;
+        }
+        .texto_zoom{
+            font-size: 0.8rem;
+        }
+        .texto_crimen{
+            font-size: 0.8rem;
+        }
+        .texto_ultimo_recital{
+            font-size: 0.8rem;
+        }
+    }
+    main .recital1997{
+        .texto_recital1997{
+            font-size: 1rem;
+            text-decoration: underline;
+        }
+    }
+     main   .mtv {
+
+     .titulo_mtv{
+            font-size: 1rem;
+            text-decoration: underline;
+        }
+    }
+     main .puente  {
+
+      .titulo_puente{
+            font-size: 1rem;
+            text-decoration: underline;
+        }
+    }
+        main .zoom{
+        .titulo_zoom{
+            font-size: 1rem;
+            text-decoration: underline;
+        }
+    }
+     main .crimen{
+           .titulo_crimen{
+            font-size: 1rem;
+            text-decoration: underline;
+        
+        }
+    }
+     main .ultimo_recital{
+
+       .titulo_ultimo_recital{
+            font-size: 1rem;
+            text-decoration: underline;
+        }
+     }
+
+    }
+
+    @media only screen and (max-width:500px){
+        .carrusel-flex{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media only screen and (max-width:500px){
+        
+            .formulario{
+
+                
+                flex-direction: columns;
+                display: grid;
+                grid-template-areas: 
+                " na "
+                "tex"
+                " ma" 
+                "texm"
+                " pr" 
+                "pr"
+                "a"
+                " pa"
+                " bt"
+
+                  ;
+                  grid-template-columns:100%;
+                  grid-template-rows:100px 100px 100px 100px 100px 100px 600px 50px 50px;   ;
+
+            }
+
+           .n-a{
+            grid-area: na;
+           }
+           .tex{
+            grid-area: tex;
+            font-size: 0.8rem;
+           }
+           .mail{
+            grid-area: ma;
+           }
+           .mail-1{
+            grid-area: texm;
+           }
+           .pregunta{
+            grid-area: pr;
+           }
+           .aceptar{
+            grid-area: a;
+           }
+           .boton{
+            grid-area: bt;
+           }
+
+    }

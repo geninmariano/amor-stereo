@@ -1,0 +1,180 @@
+// main videos y recitales
+
+main{
+
+
+    .titulo_videos_recitales{
+        z-index: 1px;
+        font-size: 2.5rem;
+        text-decoration: underline;
+        color: $rojo;
+        background-color: $tiza;
+
+    }
+
+    .recitales{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .recital1997{
+        .video_recital1997{
+            width: 50%;
+            
+        
+        }
+        .texto_recital1997{
+            font-size: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        
+       
+    }
+    .texto_r1997{
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .mtv{
+        .video_mtv{
+            width: 30%;
+          
+        
+        }   
+        .titulo_mtv{
+            font-size: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            
+        }
+        
+        }
+        .texto_mtv{
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serifs;
+            
+    }
+    .puente{
+
+        .titulo_puente {
+            font-size: 2rem;
+            text-align: center;
+        }
+        
+        .foto_puente{
+            width: 80%;
+            height: 240px;
+        }
+       
+    }
+    .texto_puente{
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .zoom{
+        .titulo_zoom{
+            font-size: 2rem;
+            text-align: center;
+        
+        }
+       
+    }
+    .texto_zoom{
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .crimen{
+        titulo_crimen{
+            font-size: 2rem;
+            text-align: center;
+        
+        }
+       
+}
+.texto_crimen{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ultimo_recital{
+    .titulo_ultimo_recital {
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+   
+    .foto_ultimo_recital{
+        width: 90%;
+        height: 250px;
+}
+}
+.texto_ultimo_recital{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* grid videos y recitales */
+.recitales{
+    display: grid;
+    grid-template-areas: 
+    "h1 h1 h1 h1 "
+    "v1 t1 v2 t2"
+    "v3 t3 v4 t4"
+    "v5 t5 v6 t6"
+    
+    ;
+    grid-template-rows:80px 350px 350px 550px;
+    grid-template-columns: 24% 26% 24% 26% ;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.titulo_videos_recitales{
+    grid-area: h1;
+       
+}
+.video_recital1997{
+    grid-area: v1;
+}
+.texto_r1997 p{
+    grid-area: t1;
+    
+}
+.mtv{
+    grid-area: v2;
+}
+.texto_mtv{
+    grid-area:t2;
+}
+.puente{
+    grid-area: v3;
+}
+.texto_puente{
+    grid-area: t3;
+}
+
+.zoom{
+    grid-area: v4;
+}
+.texto_zoom{
+    grid-area: t4;
+}
+.crimen{
+    grid-area: v5;
+}
+.texto_crimen{
+    grid-area: t5;
+}
+.ultimo_recital{
+    grid-area: v6;
+}
+.texto_ultimo_recital{
+    grid-area: t6;
+}
+
+
+
+
+
+
+}

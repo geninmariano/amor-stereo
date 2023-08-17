@@ -1,0 +1,51 @@
+// fotos y curiosidades mail
+
+.carrusel-flex{
+    
+    
+
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    
+  
+}
+        
+.carrusel-flex{
+    display: grid;
+    grid-template-areas: 
+    "fv1 fv2"
+    "fv3 fv4"
+    ;
+    grid-template-rows:900px 700px ;
+    grid-template-columns:50% 50% ;
+}
+.fotvid1{
+    grid-area: fv1;
+    padding: 10PX 10PX;
+    font-size: 0.8rem;
+    
+}
+.fotvid2{
+    grid-area: fv2;
+    margin-top: 10px;
+    align-self: flex-end;
+    
+    
+}
+.fotvid3{
+    grid-area: fv3;
+}
+.fotvid4{
+    grid-area: fv4;
+    
+}
+
+        
+
+
+

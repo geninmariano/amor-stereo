@@ -1,0 +1,104 @@
+// main bibliografia
+
+
+main{
+
+
+
+    .titulo_bibliografia{
+        text-align: center;
+        font-size: 2.5rem;
+        text-decoration: underline;
+        color: $rojo;
+        background-color:#9DB2BF ;    
+        
+    }
+    .texto_bibliografia p{
+    font-size: 0.9rem;
+    text-align: justify;
+    background-color:#ccd3d8;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    
+    }
+
+
+    /* grid main bibliografia */
+.texto_bibliografia{
+    display: grid;
+    grid-template-areas:
+    "h1 h1 h1"
+    " f1 p1 p1"
+    " f2 p2 p2"
+    "f3 p3 p3"
+    "f4 p4 p4"
+    "f5 p5 p5"
+    "f6 p6 p6"
+    "f7 p7 p7"
+    "f8 p8 p8"
+    ;
+    grid-template-rows: 105px 300px 300px 400px 480px 400px 480px 600px 400px;
+    grid-template-columns:24% 3% 73% ;
+
+
+
+}
+.titulo_bibliografia{
+    grid-area: h1;
+}
+.foto_01{
+    grid-area: f1;
+
+}
+.parrafo_1{
+    grid-area: p1;
+}
+.parrafo_2{
+    grid-area: p2;
+}
+.foto_02{
+    grid-area: f2;
+
+}
+.foto_03{
+    grid-area: f3;
+}
+.parrafo_3{
+    grid-area: p3;
+}
+.parrafo_4{
+    grid-area: p4;
+}
+.foto_04{
+    grid-area: f4;
+}
+.foto_05{
+    grid-area: f5;
+}
+.parrafo_5{
+    grid-area: p5;
+}
+.parrafo_6{
+    grid-area: p6;
+}
+.foto_06{
+    grid-area: f6;
+}
+.foto_07{
+    grid-area: f7;
+}
+.parrafo_7{
+    grid-area: p7;
+}
+.foto_08{
+    grid-area: f8;
+}
+.parrafo_8{
+    grid-area: p8;
+}
+
+
+}

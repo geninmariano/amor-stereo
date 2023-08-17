@@ -1,0 +1,982 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Inconsolata:wght@500&family=Noto+Sans+KR:wght@100&family=Roboto+Mono:ital,wght@1,100&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*paleta de colores*/
+/* #000000 #4E4FEB #068FFF #EEEEEE  #9DB2BF*/
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(146, 147, 148);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+header .logo {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+header .box_lista {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-betweens;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0px 100px;
+}
+header .box_lista .in {
+  padding: 10px 10px;
+}
+header .box_lista .bio {
+  padding: 10px 10px;
+}
+header .box_lista .disc {
+  padding: 10px 10px;
+}
+header .box_lista .rec {
+  padding: 10px 10px;
+}
+header .box_lista fot {
+  padding: 10px 10px;
+}
+
+footer {
+  background-color: #b7c4cc;
+  padding-top: 15px;
+}
+footer .redes-contactos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .frase_cierre {
+  display: flex;
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+}
+footer .redes_contacto img {
+  width: 30px;
+}
+footer .redes_contacto {
+  display: grid;
+  grid-template-areas: "p l1 l2 l3 l4";
+  grid-template-rows: 50px;
+  grid-template-columns: 60% 10% 10% 10% 10%;
+}
+footer .redes_contacto {
+  z-index: 6;
+}
+footer .frase_cierre {
+  grid-area: p;
+  padding-left: 30px;
+  font-size: 1.5rem;
+}
+footer .facebook {
+  grid-area: l1;
+}
+footer .instagram {
+  grid-area: l2;
+}
+footer .twitter {
+  grid-area: l3;
+}
+footer .mail {
+  grid-area: l4;
+}
+
+main {
+  background-color: #EEEEEE;
+}
+main .medios_imagenes_index {
+  display: flex;
+  margin-right: 1px;
+  margin-left: 1px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+}
+main .medios_imagenes_index h1 {
+  font-size: 4rem;
+  color: red;
+  text-align: center;
+  text-decoration: underline;
+}
+main .medios_imagenes_index .texto_p {
+  display: flex;
+  font-size: 1.5rem;
+  text-align: justify;
+  background-color: #EEEEEE;
+  align-items: end;
+}
+main .medios_imagenes_index a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+main .medios_imagenes_index li {
+  list-style: none;
+  font-size: 1.5rem;
+  background-color: #a3bed4;
+  text-align: center;
+}
+main .medios_imagenes_index img {
+  width: 100%;
+  height: 100%;
+}
+main .medios_imagenes_index {
+  display: grid;
+  grid-template-areas: "h1      h1   h1" "fotop   p1  p1" "fotofc  n1  fotovd" "navfc   n2 navvd " "fotodis n3 fotobi" "navdis  n4 navbi";
+  grid-template-rows: 100px 250px 200px 50px 200px 50px;
+  grid-template-columns: 35% 15% 35%;
+}
+main .titulo_index {
+  grid-area: h1;
+}
+main .foto_p {
+  grid-area: fotop;
+}
+main .texto_p {
+  grid-area: p1;
+}
+main .foto_fc {
+  grid-area: fotofc;
+}
+main .nav_fc {
+  grid-area: navfc;
+}
+main .foto_vd {
+  grid-area: fotovd;
+}
+main .nav_vd {
+  grid-area: navvd;
+}
+main .foto_dis {
+  grid-area: fotodis;
+}
+main .nav_dis {
+  grid-area: navdis;
+}
+main .fotobi {
+  grid-area: fotobi;
+}
+main .nav_bi {
+  grid-area: navbi;
+}
+
+main {
+  /* grid main bibliografia */
+}
+main .titulo_bibliografia {
+  text-align: center;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  color: red;
+  background-color: #9DB2BF;
+}
+main .texto_bibliografia p {
+  font-size: 0.9rem;
+  text-align: justify;
+  background-color: #ccd3d8;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+}
+main .texto_bibliografia {
+  display: grid;
+  grid-template-areas: "h1 h1 h1" " f1 p1 p1" " f2 p2 p2" "f3 p3 p3" "f4 p4 p4" "f5 p5 p5" "f6 p6 p6" "f7 p7 p7" "f8 p8 p8";
+  grid-template-rows: 105px 300px 300px 400px 480px 400px 480px 600px 400px;
+  grid-template-columns: 24% 3% 73%;
+}
+main .titulo_bibliografia {
+  grid-area: h1;
+}
+main .foto_01 {
+  grid-area: f1;
+}
+main .parrafo_1 {
+  grid-area: p1;
+}
+main .parrafo_2 {
+  grid-area: p2;
+}
+main .foto_02 {
+  grid-area: f2;
+}
+main .foto_03 {
+  grid-area: f3;
+}
+main .parrafo_3 {
+  grid-area: p3;
+}
+main .parrafo_4 {
+  grid-area: p4;
+}
+main .foto_04 {
+  grid-area: f4;
+}
+main .foto_05 {
+  grid-area: f5;
+}
+main .parrafo_5 {
+  grid-area: p5;
+}
+main .parrafo_6 {
+  grid-area: p6;
+}
+main .foto_06 {
+  grid-area: f6;
+}
+main .foto_07 {
+  grid-area: f7;
+}
+main .parrafo_7 {
+  grid-area: p7;
+}
+main .foto_08 {
+  grid-area: f8;
+}
+main .parrafo_8 {
+  grid-area: p8;
+}
+
+main {
+  /* grid videos y recitales */
+}
+main .titulo_videos_recitales {
+  z-index: 1px;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  color: red;
+  background-color: #EEEEEE;
+}
+main .recitales {
+  display: flex;
+  flex-direction: row;
+}
+main .recital1997 .video_recital1997 {
+  width: 50%;
+}
+main .recital1997 .texto_recital1997 {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+main .texto_r1997 {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main .mtv .video_mtv {
+  width: 30%;
+}
+main .mtv .titulo_mtv {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+main .texto_mtv {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serifs;
+}
+main .puente .titulo_puente {
+  font-size: 2rem;
+  text-align: center;
+}
+main .puente .foto_puente {
+  width: 80%;
+  height: 240px;
+}
+main .texto_puente {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main .zoom .titulo_zoom {
+  font-size: 2rem;
+  text-align: center;
+}
+main .texto_zoom {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main .crimen titulo_crimen {
+  font-size: 2rem;
+  text-align: center;
+}
+main .texto_crimen {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main .ultimo_recital .titulo_ultimo_recital {
+  font-size: 2rem;
+  text-align: center;
+}
+main .ultimo_recital .foto_ultimo_recital {
+  width: 90%;
+  height: 250px;
+}
+main .texto_ultimo_recital {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main .recitales {
+  display: grid;
+  grid-template-areas: "h1 h1 h1 h1 " "v1 t1 v2 t2" "v3 t3 v4 t4" "v5 t5 v6 t6";
+  grid-template-rows: 80px 350px 350px 550px;
+  grid-template-columns: 24% 26% 24% 26%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+main .titulo_videos_recitales {
+  grid-area: h1;
+}
+main .video_recital1997 {
+  grid-area: v1;
+}
+main .texto_r1997 p {
+  grid-area: t1;
+}
+main .mtv {
+  grid-area: v2;
+}
+main .texto_mtv {
+  grid-area: t2;
+}
+main .puente {
+  grid-area: v3;
+}
+main .texto_puente {
+  grid-area: t3;
+}
+main .zoom {
+  grid-area: v4;
+}
+main .texto_zoom {
+  grid-area: t4;
+}
+main .crimen {
+  grid-area: v5;
+}
+main .texto_crimen {
+  grid-area: t5;
+}
+main .ultimo_recital {
+  grid-area: v6;
+}
+main .texto_ultimo_recital {
+  grid-area: t6;
+}
+
+main {
+  /* grid discografia */
+}
+main .discografia {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: #ccd3d8;
+}
+main .discografia .titulo_discografia {
+  font-size: 2rem;
+  text-decoration: underline;
+  color: red;
+  align-items: center;
+  text-align: center;
+}
+main .disco_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: last center;
+}
+main .disco_1 .f_1 {
+  width: 40%;
+}
+main .disco_1 .en_1 {
+  width: 40%;
+  padding: 10px 0px;
+}
+main .disco_1 .titulo_1 {
+  text-align: center;
+  font-size: 2rem;
+  background-color: white;
+}
+main .disco_1 .texto_1 {
+  font-size: 0.9rem;
+  padding: 0px 10px;
+}
+main .disco_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .disco_2 .f_2 {
+  width: 30%;
+  padding: 10px 0px;
+}
+main .disco_2 .titulo_2 {
+  text-align: center;
+  font-size: 2rem;
+  background-color: white;
+}
+main .disco_2 .texto_2 {
+  font-size: 0.9rem;
+  padding: 0px 10px;
+}
+main .disco_3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .disco_3 .titulo_3 {
+  text-align: center;
+  font-size: 2rem;
+  background-color: white;
+}
+main .disco_3 .texto_3 {
+  font-size: 0.9rem;
+  padding: 0px 10px;
+}
+main .disco_3 .f_3 {
+  padding: 10px 0px;
+  width: 30%;
+}
+main .disco_4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .disco_4 .f_4 {
+  padding: 10px 0px;
+}
+main .disco_4 .titulo_4 {
+  text-align: center;
+  font-size: 2rem;
+  background-color: white;
+}
+main .disco_4 .texto_4 {
+  font-size: 0.9rem;
+  padding: 0px 10px;
+}
+main .disco_5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .disco_5 .titulo_5 {
+  text-align: center;
+  font-size: 2rem;
+  background-color: white;
+}
+main .disco_5 .texto_5 {
+  font-size: 0.9rem;
+  padding: 0px 10px;
+}
+main .disco_5 f_5 {
+  padding: 10px 0px;
+}
+main .disco_6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .disco_6 .titulo_6 {
+  text-align: center;
+  font-size: 2rem;
+  background-color: white;
+}
+main .disco_6 .texto_6 {
+  font-size: 0.9rem;
+  padding: 0px 10px;
+}
+main .disco_6 f_6 {
+  padding: 10px 0px;
+  width: 10%;
+}
+main .disco_7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .disco_7 .titulo_7 {
+  font-size: 2rem;
+  text-align: center;
+  background-color: white;
+}
+main .disco_7 .texto_7 {
+  font-size: 0.9rem;
+  padding: 0px 10px;
+}
+main .disco_7 f_7 {
+  padding: 10px 0px;
+}
+main .discografia {
+  display: grid;
+  grid-template-areas: "t01 t01 t01 t01" " dis1 dis1 dis2 dis2" "dis3 dis3 dis4 dis4" "dis5 dis5 dis6 dis6" "dis7 dis7 dis7 dis7";
+  grid-template-rows: 200px 650px 600px 600px 550Px;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+main .titulo_discografia {
+  grid-area: t01;
+}
+main .disco_1 {
+  grid-area: dis1;
+}
+main .disco_2 {
+  grid-area: dis2;
+}
+main .disco_3 {
+  grid-area: dis3;
+}
+main .disco_4 {
+  grid-area: dis4;
+}
+main .disco_5 {
+  grid-area: dis5;
+}
+main .disco_6 {
+  grid-area: dis6;
+}
+main .disco_7 {
+  grid-area: dis7;
+}
+
+.carrusel-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+.carrusel-flex {
+  display: grid;
+  grid-template-areas: "fv1 fv2" "fv3 fv4";
+  grid-template-rows: 900px 700px;
+  grid-template-columns: 50% 50%;
+}
+
+.fotvid1 {
+  grid-area: fv1;
+  padding: 10PX 10PX;
+  font-size: 0.8rem;
+}
+
+.fotvid2 {
+  grid-area: fv2;
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+.fotvid3 {
+  grid-area: fv3;
+}
+
+.fotvid4 {
+  grid-area: fv4;
+}
+
+.contacto {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.contacto .formulario {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  background-color: #EEEEEE;
+}
+
+@media only screen and (max-width: 500px) {
+  /* modificar encabezado para mobile */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  header .box_lista {
+    width: 100%;
+    flex-direction: column;
+    display: grid;
+    grid-template-areas: "  nv" "  nv1" "  nv2" "  nv3" "  nv4";
+    grid-template-rows: 20px 20px 20px 20px 20px 20px;
+    grid-template-columns: 100%;
+  }
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+  header .logo {
+    width: 30%;
+  }
+  header .in {
+    grid-area: nv;
+  }
+  header .bio {
+    grid-area: nv1;
+  }
+  header .disc {
+    grid-area: nv2;
+  }
+  header .rec {
+    grid-area: nv3;
+  }
+  header .fot {
+    grid-area: nv4;
+  }
+  header header nav {
+    width: 100%;
+  }
+  header .texto_p {
+    font-size: 1.5rem;
+  }
+  header .box_lista {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+/* modificar index  para mobile */
+@media only screen and (max-width: 500px) {
+  main {
+    display: flex;
+  }
+  main .medios_imagenes_index {
+    display: grid;
+    grid-template-areas: "h1" "fotop" "p1" "fotofc" "navfc" "fotovd" "navvd" "fotodis" "navdis" "fotobi" "navbi";
+    grid-template-rows: 50px 200px 150px 250px 50px 300px 50px 300px 50px 300px 50px;
+    grid-template-columns: 100%;
+  }
+  main .medios_imagenes_index .titulo_index {
+    font-size: 2rem;
+  }
+  main .medios_imagenes_index .texto_p {
+    font-size: 0.8rem;
+  }
+  main .medios_imagenes_index .foto_p {
+    width: 90%;
+    height: 90%;
+    margin-left: 10px;
+  }
+  main .medios_imagenes_index .li a {
+    font-size: 0.5rem;
+  }
+  main .titulo_index {
+    grid-area: h1;
+  }
+  main .foto_p {
+    grid-area: fotop;
+  }
+  main .texto_p {
+    grid-area: p1;
+  }
+  main .foto_fc {
+    grid-area: fotofc;
+  }
+  main .nav-fc {
+    grid-area: navfc;
+  }
+  main .foto.dv {
+    grid-area: fotovd;
+  }
+  main .nav_vd {
+    grid-area: navvd;
+  }
+  main .foto_dis {
+    grid-area: fotodis;
+  }
+  main .nav_dis {
+    grid-area: navdis;
+  }
+  main .fotobi {
+    grid-area: fotobi;
+  }
+  main .nav_bi {
+    grid-area: navbi;
+  }
+}
+/* modificar footer para mobile */
+@media only screen and (max-width: 500px) {
+  footer {
+    text-align: center;
+    align-items: center;
+  }
+  footer .redes_contacto {
+    display: grid;
+    grid-template-areas: "p  p p p" "l1 l2 l3 l4";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  footer .frase_cierre {
+    grid-area: p;
+  }
+  footer .facebook {
+    grid-area: l1;
+  }
+  footer .instagram {
+    grid-area: l2;
+  }
+  footer .twitter {
+    grid-area: l3;
+  }
+  footer .mail {
+    grid-area: l4;
+  }
+  footer .frase_cierre {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+/* adaptar bibliografia mobile */
+@media only screen and (max-width: 500px) {
+  main .texto_bibliografia {
+    display: grid;
+    grid-template-areas: "h1" "f1" "p1" "f2" "p2" "f3" "p3" "f4" "p4" "f5" "p5" "f6" "p6" "f7" "p7" "f8" "p8";
+    grid-template-rows: 50px 160px 450px 300px 750px 600px 1000px 900px 1100px 1000px 800px 650px 1200px 600px 1850px 650px 1280px;
+    grid-template-columns: 100%;
+  }
+  main .texto_bibliografia {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+  main .titulo_bibliografia {
+    font-size: 1rem;
+  }
+  main .foto_01 {
+    width: 95%;
+  }
+  main .foto_02 {
+    width: 95%;
+  }
+  main .foto_03 {
+    width: 95%;
+  }
+  main .foto_04 {
+    width: 95%;
+  }
+  main .foto_05 {
+    width: 95%;
+  }
+  main .foto_06 {
+    width: 80%;
+  }
+  main .foto_07 {
+    width: 95%;
+  }
+  main .foto_08 {
+    width: 95%;
+  }
+  .texto_bibliografia .parrafo_1 {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .texto_bibliografia .parrafo_2 {
+    font-size: 0.9rem;
+  }
+  .texto_bibliografia .parrafo_3 {
+    font-size: 0.9rem;
+  }
+  .texto_bibliografia .parrafo_4 {
+    font-size: 0.9rem;
+  }
+  .texto_bibliografia .parrafo_5 {
+    font-size: 0.9rem;
+  }
+  .texto_bibliografia .parrafo_6 {
+    font-size: 0.9rem;
+  }
+  .texto_bibliografia .parrafo_7 {
+    font-size: 0.9rem;
+  }
+  .texto_bibliografia .parrafo_8 {
+    font-size: 0.9rem;
+  }
+}
+/* adaptar discografia a mobile */
+@media only screen and (max-width: 500px) {
+  main .discografia {
+    grid-template-areas: "t01" "dis1" "dis2" "dis3" "dis4" "dis5" "dis6" "dis7";
+    grid-template-rows: 30px 450px 500px 650px 550px 650px 680px 700px;
+    grid-template-columns: 100%;
+  }
+  main .discografia {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+  main .discografia .titulo_discografia {
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: center;
+  }
+  main .disco_1 .titulo_1 {
+    font-size: 1rem;
+  }
+  main .disco_1 .texto_1 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  main .disco_2 .titulo_2 {
+    font-size: 1rem;
+  }
+  main .disco_2 .texto_2 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  main .disco_3 .titulo_3 {
+    font-size: 1rem;
+  }
+  main .disco_3 .texto_3 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  main .disco_4 .titulo_4 {
+    font-size: 1rem;
+  }
+  main .disco_4 .texto_4 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  main .disco_5 .titulo_5 {
+    font-size: 1rem;
+  }
+  main .disco_5 .texto_5 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  main .disco_6 .titulo_6 {
+    font-size: 1rem;
+  }
+  main .disco_6 .texto_6 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  main .disco_7 .titulo_7 {
+    font-size: 1rem;
+  }
+  main .disco_7 .texto_7 {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+/* videos y recitales */
+@media only screen and (max-width: 500px) {
+  main .titulo_videos_recitales {
+    font-size: 1.5rem;
+  }
+  main .recitales {
+    display: grid;
+    grid-template-areas: "h1 " "v1 " "t1" "v2" "t2" "v3" "t3" "v4" "t4" "v5" "t5" "v6" "t6";
+    grid-template-rows: 50px 200px 300px 200px 300px 230px 350px 300px 250px 350px 300px 350px 450px;
+    grid-template-columns: 100%;
+  }
+  .recitales {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .recitales .texto_r1997 {
+    font-size: 0.8rem;
+  }
+  .recitales .texto_mtv {
+    font-size: 0.8rem;
+  }
+  .recitales .texto_puente {
+    font-size: 0.8rem;
+  }
+  .recitales .texto_zoom {
+    font-size: 0.8rem;
+  }
+  .recitales .texto_crimen {
+    font-size: 0.8rem;
+  }
+  .recitales .texto_ultimo_recital {
+    font-size: 0.8rem;
+  }
+  main .recital1997 .texto_recital1997 {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+  main .mtv .titulo_mtv {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+  main .puente .titulo_puente {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+  main .zoom .titulo_zoom {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+  main .crimen .titulo_crimen {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+  main .ultimo_recital .titulo_ultimo_recital {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .carrusel-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .formulario {
+    flex-direction: columns;
+    display: grid;
+    grid-template-areas: " na " "tex" " ma" "texm" " pr" "pr" "a" " pa" " bt";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 600px 50px 50px;
+  }
+  .n-a {
+    grid-area: na;
+  }
+  .tex {
+    grid-area: tex;
+    font-size: 0.8rem;
+  }
+  .mail {
+    grid-area: ma;
+  }
+  .mail-1 {
+    grid-area: texm;
+  }
+  .pregunta {
+    grid-area: pr;
+  }
+  .aceptar {
+    grid-area: a;
+  }
+  .boton {
+    grid-area: bt;
+  }
+}
+
+/*# sourceMappingURL=estilos-sass.css.map */

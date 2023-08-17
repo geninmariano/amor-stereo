@@ -1,0 +1,233 @@
+// main videos y recitales
+
+// discografia
+
+main{
+
+.discografia{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color:#ccd3d8 ;
+
+   
+    .titulo_discografia{
+        font-size: 2rem;
+        text-decoration: underline;
+        color: $rojo;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+
+
+}
+
+
+
+.disco_1{
+    display: flex;
+    flex-direction: column;
+    align-items:last center;
+
+    .f_1{
+        width: 40%;
+    }
+    .en_1{
+        width: 40%;
+        padding: 10px 0px;
+        
+    }
+    .titulo_1{
+        text-align: center;
+        font-size: 2rem;
+        background-color:$blanco;
+    }  
+
+    .texto_1{
+        font-size: 0.9rem;
+        padding: 0px 10px;
+        } 
+}
+.disco_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .f_2{
+        width: 30%;
+        padding: 10px 0px;
+    }
+
+    .titulo_2{
+        text-align: center;
+        font-size: 2rem;
+        background-color:$blanco;
+    }
+
+    .texto_2{
+        font-size: 0.9rem;
+        padding: 0px 10px;
+    
+}
+}
+
+.disco_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .titulo_3{
+        text-align: center;
+        font-size: 2rem;
+        background-color:$blanco;
+    }
+
+    .texto_3{
+        font-size: 0.9rem;
+        padding: 0px 10px;
+    }
+
+    .f_3{
+        padding: 10px 0px;
+        width: 30%;
+
+    }
+
+}
+.disco_4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .f_4{
+        
+        padding: 10px 0px;
+    }
+
+    .titulo_4{
+        text-align: center;
+        font-size: 2rem;
+        background-color:$blanco;
+    }
+    .texto_4{
+        font-size: 0.9rem;
+        padding: 0px 10px;
+    }
+
+
+}
+.disco_5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .titulo_5{
+        text-align: center;
+        font-size: 2rem;
+        background-color:$blanco;
+    }
+
+    .texto_5{
+        font-size: 0.9rem;
+        padding: 0px 10px;
+    
+    }
+    f_5{
+        padding: 10px 0px;
+    }
+
+}
+.disco_6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .titulo_6{
+        text-align: center;
+         font-size: 2rem;
+         background-color:$blanco;
+     }
+
+     .texto_6{
+        font-size: 0.9rem;
+        padding: 0px 10px;
+    }
+    f_6{
+        padding: 10px 0px;
+        width: 10%;
+    }
+}
+.disco_7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .titulo_7{
+        font-size: 2rem;
+        text-align: center;
+        background-color:$blanco;
+    }
+
+    .texto_7{
+        font-size: 0.9rem;
+        padding: 0px 10px;
+        
+    }
+    f_7{
+        padding: 10px 0px;
+    }
+}
+
+
+/* grid discografia */
+.discografia{
+    display: grid;
+    grid-template-areas: 
+    "t01 t01 t01 t01"
+    " dis1 dis1 dis2 dis2"
+    "dis3 dis3 dis4 dis4"
+    "dis5 dis5 dis6 dis6"
+    "dis7 dis7 dis7 dis7"
+   
+    ;
+    grid-template-rows: 200px 650px 600px 600px 550Px;
+    grid-template-columns: 25% 25% 25%  25% ;
+
+}
+
+
+.titulo_discografia{
+    grid-area: t01;
+}
+.disco_1{
+    grid-area: dis1;
+}
+.disco_2{
+    grid-area: dis2;
+}
+.disco_3{
+    grid-area: dis3;
+}
+.disco_4{
+    grid-area: dis4;
+}
+.disco_5{
+    grid-area: dis5;
+}
+.disco_6{
+    grid-area: dis6;
+}
+.disco_7{
+    grid-area:dis7 ;
+}
+
+
+
+}
+
+

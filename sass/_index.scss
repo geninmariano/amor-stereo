@@ -1,0 +1,130 @@
+// main
+
+main{
+    background-color: $tiza ;
+    
+
+   
+
+
+
+    .medios_imagenes_index{
+
+        display: flex;
+        margin-right: 1px;
+        margin-left: 1px;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+    
+       
+
+        h1{
+            font-size: 4rem;
+            color: $rojo;
+            text-align: center;
+            text-decoration: underline;
+           
+        
+        
+        }
+        .texto_p{
+            display: flex;
+            font-size: 1.5rem;
+            text-align: justify;
+            background-color: #EEEEEE;
+            align-items: end;
+        }
+
+       
+        a{
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+            
+        
+            
+            
+        }
+        li{
+            list-style: none;
+            font-size: 1.5rem;
+            background-color:#a3bed4 ;
+            text-align: center;
+            
+        }
+
+         
+
+    }
+
+    .medios_imagenes_index img{
+        width: 100%;
+        height: 100%;
+    }
+   
+        
+         
+    
+    
+   
+    
+    // grid main
+    
+    .medios_imagenes_index{
+        display: grid;
+        grid-template-areas:
+        "h1      h1   h1" 
+        "fotop   p1  p1"
+        "fotofc  n1  fotovd"
+        "navfc   n2 navvd "
+        "fotodis n3 fotobi"
+        "navdis  n4 navbi"
+        ;
+        grid-template-rows:100px 250px 200px 50px 200px 50px;
+        grid-template-columns: 35% 15% 35%;
+    
+    }
+    .titulo_index{
+        grid-area: h1;
+        
+    }
+    .foto_p{
+        grid-area: fotop;
+        
+        
+    }
+    .texto_p{
+        grid-area: p1;
+
+        
+    
+    }
+    .foto_fc{
+        grid-area: fotofc;
+    }
+    .nav_fc{
+        grid-area: navfc;
+    }
+    .foto_vd{
+        grid-area: fotovd;
+    }
+    .nav_vd{
+        grid-area: navvd;
+    }
+    .foto_dis{
+        grid-area: fotodis;
+    }
+    .nav_dis{
+        grid-area: navdis;
+    }
+    .fotobi{
+        grid-area:fotobi ;
+    }
+    .nav_bi{
+        grid-area: navbi;
+    }
+    
+
+
+}

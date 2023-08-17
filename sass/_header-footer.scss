@@ -1,0 +1,133 @@
+// header
+header{
+
+
+    width:100% ;
+    height: 100px;
+    background-color: rgb(146, 147, 148);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    
+    
+   
+    
+
+        .logo{
+        width: 10%;  
+
+        display: flex;
+        justify-content: space-between;
+        
+          
+    
+            }
+    
+    
+        .box_lista {
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-betweens;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin: 0;
+            margin-bottom: 1rem;
+            padding: 0px 100px;
+                    .in{
+                        padding: 10px 10px;
+                        
+                    }
+                    .bio{
+                        padding: 10px 10px;
+                    }
+                    .disc{
+                        padding: 10px 10px;
+                    }
+                    .rec{
+                        padding: 10px 10px;
+                    }
+                    fot{
+                        padding: 10px 10px;
+                    }
+
+
+        }
+}
+
+// footer
+
+footer{
+
+    background-color:#b7c4cc ;
+    padding-top: 15px;
+
+    .redes-contactos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+
+        
+       
+  
+}
+.frase_cierre {
+    display: flex;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}    
+.redes_contacto img{
+    width: 30px;
+    
+
+}
+
+
+.redes_contacto{
+    display:grid ;
+    grid-template-areas: 
+    "p l1 l2 l3 l4"
+    
+    ;
+    grid-template-rows:50px ;
+    grid-template-columns: 60% 10% 10% 10% 10%;
+
+
+}
+.redes_contacto{
+    z-index: 6;
+}
+.frase_cierre{
+    grid-area: p;
+    padding-left: 30px;
+    font-size: 1.5rem;
+
+}
+.facebook{
+    grid-area: l1;
+}
+.instagram{
+    grid-area: l2;
+}
+.twitter{
+    grid-area: l3;
+}
+.mail{
+    grid-area: l4;
+}
+
+}
+
+
+
+
+
+
+
