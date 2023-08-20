@@ -125,6 +125,31 @@ main{
         grid-area: navbi;
     }
     
+    .titulo_index{
+        animation-name: baila-titulo;
+        animation-iteration-count: 1;
+        animation-duration: 4s;
+        animation-delay: 0s;
+
+    }
+
+    @keyframes baila-titulo {
+        0%{
+            background-color: $tiza;
+            transform: rotate(20deg);
+        }
+        50%{
+            background-color: $azul;
+            transform: rotate(-20deg);
+
+        }
+        100%{
+            background-color: $tiza;
+            transform: rotate(360deg);
+        }
+
+        
+    }
 
 
 }

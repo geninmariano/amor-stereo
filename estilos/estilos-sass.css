@@ -8,14 +8,15 @@
 /*paleta de colores*/
 /* #000000 #4E4FEB #068FFF #EEEEEE  #9DB2BF*/
 header {
+  z-index: 1050;
   width: 100%;
-  height: 100px;
   background-color: rgb(146, 147, 148);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: sticky;
   top: 0;
+  background-image: radial-gradient(circle, #3e2eac, #6452bc, #8676cb, #a69bd8, #c7c1e5, #ccc9e2, #d1d1de, #d8d8d9, #c4c4c5, #b0b0b1, #9d9c9e, #8a898b);
 }
 header .logo {
   width: 10%;
@@ -23,6 +24,7 @@ header .logo {
   justify-content: space-between;
 }
 header .box_lista {
+  transition: 2s;
   list-style: none;
   width: 100%;
   height: 100%;
@@ -36,23 +38,37 @@ header .box_lista {
   margin-bottom: 1rem;
   padding: 0px 100px;
 }
-header .box_lista .in {
+header .box_lista .in, header .box_lista fot, header .box_lista .rec, header .box_lista .disc, header .box_lista .bio {
   padding: 10px 10px;
 }
-header .box_lista .bio {
-  padding: 10px 10px;
+header .box_lista .in:hover, header .box_lista .bio:hover, header .box_lista .disc:hover, header .box_lista .rec:hover, header .box_lista fot:hover {
+  color: red;
+  font-size: 2rem;
+  text-decoration: solid;
 }
-header .box_lista .disc {
-  padding: 10px 10px;
+header .box_lista .bio:hover {
+  color: green;
+  font-size: 2rem;
+  text-decoration: solid;
 }
-header .box_lista .rec {
-  padding: 10px 10px;
+header .box_lista .disc:hover {
+  color: yellow;
+  font-size: 2rem;
+  text-decoration: solid;
 }
-header .box_lista fot {
-  padding: 10px 10px;
+header .box_lista .rec:hover {
+  color: white;
+  font-size: 2rem;
+  text-decoration: solid;
+}
+header .box_lista .fot:hover {
+  color: red;
+  font-size: 2rem;
+  text-decoration: solid;
 }
 
 footer {
+  background-image: radial-gradient(circle, #3e2eac, #484dbc, #5869c8, #6d84d3, #879fdb, #869bd0, #8698c5, #8594ba, #67739c, #4b537f, #303562, #171946);
   background-color: #b7c4cc;
   padding-top: 15px;
 }
@@ -64,7 +80,7 @@ footer .redes-contactos {
 footer .frase_cierre {
   display: flex;
   font-size: 1rem;
-  color: black;
+  color: #000000;
   font-weight: bold;
 }
 footer .redes_contacto img {
@@ -174,6 +190,26 @@ main .fotobi {
 }
 main .nav_bi {
   grid-area: navbi;
+}
+main .titulo_index {
+  animation-name: baila-titulo;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+@keyframes baila-titulo {
+  0% {
+    background-color: #EEEEEE;
+    transform: rotate(20deg);
+  }
+  50% {
+    background-color: #4E4FEB;
+    transform: rotate(-20deg);
+  }
+  100% {
+    background-color: #EEEEEE;
+    transform: rotate(360deg);
+  }
 }
 
 main {
@@ -630,7 +666,7 @@ main .disco_7 {
   header .logo {
     width: 30%;
   }
-  header .in {
+  header .in, header .box_lista .bio, header .box_lista .disc, header .box_lista .rec, header .box_lista fot {
     grid-area: nv;
   }
   header .bio {

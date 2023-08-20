@@ -7,6 +7,21 @@ $tiza:#EEEEEE;
 $gris:#9DB2BF;
 $rojo:red;
 $blanco:white;
+$verde:green;
+$amarillo:yellow;
 
 $font:'Inconsolata', monospace;
+
+@mixin flex ($display,$direccion){
+    display: $display;
+    flex-direction: $direccion;
+}
+
+@mixin detalle-nav ($color,$size,$decoracion){
+    color: $color;
+    font-size: $size;
+    text-decoration: $decoracion;
+
+}
+
 

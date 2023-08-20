@@ -1,17 +1,17 @@
 // header
 header{
 
-
+    z-index: 1050;
     width:100% ;
-    height: 100px;
+    
     background-color: rgb(146, 147, 148);
-    display: flex;
-    flex-direction: row;
+    
+    @include flex(flex,row);
     justify-content: space-between;
     position: sticky;
     top: 0;
     
-    
+    background-image: radial-gradient(circle, #3e2eac, #6452bc, #8676cb, #a69bd8, #c7c1e5, #ccc9e2, #d1d1de, #d8d8d9, #c4c4c5, #b0b0b1, #9d9c9e, #8a898b);
    
     
 
@@ -27,11 +27,11 @@ header{
     
     
         .box_lista {
+            transition: 2s;
             list-style: none;
             width: 100%;
             height: 100%;
-            display: flex;
-            flex-direction: row;
+             @include flex(flex,row);   
             justify-content: space-betweens;
             align-items: center;
             margin-left: 10px;
@@ -44,26 +44,50 @@ header{
                         
                     }
                     .bio{
-                        padding: 10px 10px;
+                        @extend .in
                     }
                     .disc{
-                        padding: 10px 10px;
+                        @extend .in
                     }
                     .rec{
-                        padding: 10px 10px;
+                        @extend .in
                     }
                     fot{
-                        padding: 10px 10px;
+                        @extend .in
                     }
 
 
+        
+        .in:hover{
+             @include detalle-nav($rojo,2rem,solid);
+
         }
+        .bio:hover{
+            @include detalle-nav($verde,2rem,solid);
+        }
+        .disc:hover{
+            @include detalle-nav($amarillo,2rem,solid);
+        }
+        .rec:hover{
+            @include detalle-nav($blanco,2rem,solid);
+        }
+
+        .fot:hover{
+            @include detalle-nav($rojo,2rem,solid);
+        }
+
+    }   
+
+            
 }
+
+
 
 // footer
 
 footer{
-
+    background-image: radial-gradient(circle, #3e2eac, #484dbc, #5869c8, #6d84d3, #879fdb, #869bd0, #8698c5, #8594ba, #67739c, #4b537f, #303562, #171946);
+    
     background-color:#b7c4cc ;
     padding-top: 15px;
 
@@ -80,7 +104,7 @@ footer{
 .frase_cierre {
     display: flex;
     font-size: 1rem;
-    color: black;
+    color: $negro;
     font-weight: bold;
 }    
 .redes_contacto img{
@@ -123,7 +147,9 @@ footer{
     grid-area: l4;
 }
 
+
 }
+
 
 
 
