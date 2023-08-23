@@ -18,6 +18,8 @@ main{
         color: $rojo;
         align-items: center;
         text-align: center;
+        background-color: $tiza;
+        padding-top: 10px;
     
     }
 
@@ -195,7 +197,7 @@ main{
     "dis7 dis7 dis7 dis7"
    
     ;
-    grid-template-rows: 200px 650px 600px 600px 550Px;
+    grid-template-rows: 80px 650px 600px 600px 550Px;
     grid-template-columns: 25% 25% 25%  25% ;
 
 }

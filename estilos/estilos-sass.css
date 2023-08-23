@@ -24,10 +24,9 @@ header .logo {
   justify-content: space-between;
 }
 header .box_lista {
-  transition: 2s;
   list-style: none;
   width: 100%;
-  height: 100%;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-betweens;
@@ -36,12 +35,12 @@ header .box_lista {
   margin-right: 10px;
   margin: 0;
   margin-bottom: 1rem;
-  padding: 0px 100px;
 }
 header .box_lista .in, header .box_lista fot, header .box_lista .rec, header .box_lista .disc, header .box_lista .bio {
   padding: 10px 10px;
 }
 header .box_lista .in:hover, header .box_lista .bio:hover, header .box_lista .disc:hover, header .box_lista .rec:hover, header .box_lista fot:hover {
+  transition: 0.5s;
   color: red;
   font-size: 2rem;
   text-decoration: solid;
@@ -50,21 +49,25 @@ header .box_lista .bio:hover {
   color: green;
   font-size: 2rem;
   text-decoration: solid;
+  transition: 1s;
 }
 header .box_lista .disc:hover {
   color: yellow;
   font-size: 2rem;
   text-decoration: solid;
+  transition: 1s;
 }
 header .box_lista .rec:hover {
   color: white;
   font-size: 2rem;
   text-decoration: solid;
+  transition: 1s;
 }
 header .box_lista .fot:hover {
   color: red;
   font-size: 2rem;
   text-decoration: solid;
+  transition: 1s;
 }
 
 footer {
@@ -149,8 +152,8 @@ main .medios_imagenes_index li {
   text-align: center;
 }
 main .medios_imagenes_index img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 90%;
 }
 main .medios_imagenes_index {
   display: grid;
@@ -220,7 +223,7 @@ main .titulo_bibliografia {
   font-size: 2.5rem;
   text-decoration: underline;
   color: red;
-  background-color: #9DB2BF;
+  background-color: #EEEEEE;
 }
 main .texto_bibliografia p {
   font-size: 0.9rem;
@@ -433,6 +436,8 @@ main .discografia .titulo_discografia {
   color: red;
   align-items: center;
   text-align: center;
+  background-color: #EEEEEE;
+  padding-top: 10px;
 }
 main .disco_1 {
   display: flex;
@@ -563,7 +568,7 @@ main .disco_7 f_7 {
 main .discografia {
   display: grid;
   grid-template-areas: "t01 t01 t01 t01" " dis1 dis1 dis2 dis2" "dis3 dis3 dis4 dis4" "dis5 dis5 dis6 dis6" "dis7 dis7 dis7 dis7";
-  grid-template-rows: 200px 650px 600px 600px 550Px;
+  grid-template-rows: 80px 650px 600px 600px 550Px;
   grid-template-columns: 25% 25% 25% 25%;
 }
 main .titulo_discografia {
@@ -653,7 +658,6 @@ main .disco_7 {
     text-align: center;
   }
   header .box_lista {
-    width: 100%;
     flex-direction: column;
     display: grid;
     grid-template-areas: "  nv" "  nv1" "  nv2" "  nv3" "  nv4";
@@ -664,7 +668,7 @@ main .disco_7 {
     font-size: 0.8rem;
   }
   header .logo {
-    width: 30%;
+    width: 20%;
   }
   header .in, header .box_lista .bio, header .box_lista .disc, header .box_lista .rec, header .box_lista fot {
     grid-area: nv;
@@ -681,15 +685,11 @@ main .disco_7 {
   header .fot {
     grid-area: nv4;
   }
-  header header nav {
-    width: 100%;
-  }
   header .texto_p {
     font-size: 1.5rem;
   }
   header .box_lista {
     margin-left: 0px;
-    margin-right: 10px;
   }
 }
 /* modificar index  para mobile */
@@ -711,11 +711,12 @@ main .disco_7 {
   }
   main .medios_imagenes_index .foto_p {
     width: 90%;
-    height: 90%;
-    margin-left: 10px;
   }
   main .medios_imagenes_index .li a {
     font-size: 0.5rem;
+  }
+  main .medios_imagenes_index .foto_fc {
+    width: 90%;
   }
   main .titulo_index {
     grid-area: h1;

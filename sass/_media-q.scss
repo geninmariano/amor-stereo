@@ -1,8 +1,9 @@
 @media only screen and (max-width:500px){
     /* modificar encabezado para mobile */
     header {
+        
         display: flex;
-         flex-direction: row;
+        flex-direction: row;
         
         
         justify-content: space-between;
@@ -11,7 +12,7 @@
        
     
     .box_lista{
-        width: 100%;
+        
         flex-direction: column;
         display: grid;
         grid-template-areas: 
@@ -29,7 +30,7 @@
        
     }
     .logo{
-        width: 30%;
+        width: 20%;
         
 
     }
@@ -55,16 +56,15 @@
         grid-area: nv4;
     
     }
-    header nav{
-        width: 100%;
-    }
+    
+    
     
     .texto_p{
         font-size: 1.5rem;
     }
     .box_lista{
         margin-left: 0px;
-        margin-right: 10px;
+       
         
     }
 }
@@ -86,11 +86,14 @@
         }
         .foto_p{
             width: 90%;
-            height: 90%;
-            margin-left: 10px;
+            
+            
         }
         .li a{
             font-size: 0.5rem;
+        }
+        .foto_fc{
+            width: 90%;
         }
 
             
