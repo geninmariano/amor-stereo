@@ -810,7 +810,7 @@ main .disco_7 {
   main .texto_bibliografia {
     display: grid;
     grid-template-areas: "h1" "f1" "p1" "f2" "p2" "f3" "p3" "f4" "p4" "f5" "p5" "f6" "p6" "f7" "p7" "f8" "p8";
-    grid-template-rows: 130px 160px 450px 300px 750px 600px 1000px 700px 800px 900px 800px 500px 1000px 400px 1500px 400px 900px;
+    grid-template-rows: 130px 160px 450px 300px 750px 600px 1000px 700px 800px 900px 800px 500px 1000px 400px 1500px 400px 1100px;
     grid-template-columns: 100%;
   }
   main .texto_bibliografia {
