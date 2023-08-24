@@ -64,7 +64,7 @@
     }
     .box_lista{
         margin-left: 0px;
-       
+        margin-right: 10px;
         
     }
 }
@@ -228,10 +228,10 @@
     "p8"
     
     ;
-    grid-template-rows: 50px 160px 450px 300px 750px 600px 1000px 900px 1100px 1000px 800px 650px 1200px 600px 1850px 650px 1280px;
+    grid-template-rows: 130px 160px 450px 300px 750px 600px 1000px 700px 800px 900px 800px 500px 1000px 400px 1500px 400px 900px;
     grid-template-columns: 100%;
     
-    
+
     
     }
     .texto_bibliografia{
@@ -242,7 +242,7 @@
         
     }
     .titulo_bibliografia{
-        font-size: 1rem;
+        font-size: 1.2rem;
         
     }
 
@@ -295,32 +295,42 @@
   
 }
 .texto_bibliografia{
+    background-color: $gris;
     .parrafo_1{
     font-size: 0.9rem;
+    background-color: $gris;
     
     padding: 10px;
     }
     .parrafo_2{
         font-size: 0.9rem;
+        background-color: $gris;
     }
 
     .parrafo_3{
         font-size: 0.9rem;
+        background-color: $gris;
+        
     }
     .parrafo_4{
         font-size: 0.9rem;
+        background-color: $gris;
     }
     .parrafo_5{
         font-size: 0.9rem;
+        background-color: $gris;
     }
     .parrafo_6{
         font-size: 0.9rem;
+        background-color: $gris;
     }
     .parrafo_7{
         font-size: 0.9rem;
+        background-color: $gris;
     }
     .parrafo_8{
         font-size: 0.9rem;
+         background-color: $gris;
     }
 
 }

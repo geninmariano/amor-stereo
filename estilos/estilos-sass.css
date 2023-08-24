@@ -23,6 +23,23 @@ header .logo {
   display: flex;
   justify-content: space-between;
 }
+header .logo {
+  animation-name: gira-logo;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+@keyframes gira-logo {
+  0% {
+    transform: rotate(75deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 header .box_lista {
   list-style: none;
   width: 100%;
@@ -214,7 +231,10 @@ main .titulo_index {
     transform: rotate(360deg);
   }
 }
-
+main .fc:hover, main .bi:hover, main .dis:hover, main .vd:hover {
+  background-color: red;
+  color: white;
+}
 main {
   /* grid main bibliografia */
 }
@@ -690,6 +710,7 @@ main .disco_7 {
   }
   header .box_lista {
     margin-left: 0px;
+    margin-right: 10px;
   }
 }
 /* modificar index  para mobile */
@@ -789,7 +810,7 @@ main .disco_7 {
   main .texto_bibliografia {
     display: grid;
     grid-template-areas: "h1" "f1" "p1" "f2" "p2" "f3" "p3" "f4" "p4" "f5" "p5" "f6" "p6" "f7" "p7" "f8" "p8";
-    grid-template-rows: 50px 160px 450px 300px 750px 600px 1000px 900px 1100px 1000px 800px 650px 1200px 600px 1850px 650px 1280px;
+    grid-template-rows: 130px 160px 450px 300px 750px 600px 1000px 700px 800px 900px 800px 500px 1000px 400px 1500px 400px 900px;
     grid-template-columns: 100%;
   }
   main .texto_bibliografia {
@@ -799,7 +820,7 @@ main .disco_7 {
     justify-items: center;
   }
   main .titulo_bibliografia {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   main .foto_01 {
     width: 95%;
@@ -825,30 +846,41 @@ main .disco_7 {
   main .foto_08 {
     width: 95%;
   }
+  .texto_bibliografia {
+    background-color: #9DB2BF;
+  }
   .texto_bibliografia .parrafo_1 {
     font-size: 0.9rem;
+    background-color: #9DB2BF;
     padding: 10px;
   }
   .texto_bibliografia .parrafo_2 {
     font-size: 0.9rem;
+    background-color: #9DB2BF;
   }
   .texto_bibliografia .parrafo_3 {
     font-size: 0.9rem;
+    background-color: #9DB2BF;
   }
   .texto_bibliografia .parrafo_4 {
     font-size: 0.9rem;
+    background-color: #9DB2BF;
   }
   .texto_bibliografia .parrafo_5 {
     font-size: 0.9rem;
+    background-color: #9DB2BF;
   }
   .texto_bibliografia .parrafo_6 {
     font-size: 0.9rem;
+    background-color: #9DB2BF;
   }
   .texto_bibliografia .parrafo_7 {
     font-size: 0.9rem;
+    background-color: #9DB2BF;
   }
   .texto_bibliografia .parrafo_8 {
     font-size: 0.9rem;
+    background-color: #9DB2BF;
   }
 }
 /* adaptar discografia a mobile */

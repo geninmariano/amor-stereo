@@ -102,9 +102,11 @@ main{
     }
     .foto_fc{
         grid-area: fotofc;
+        
     }
     .nav_fc{
         grid-area: navfc;
+        
     }
     .foto_vd{
         grid-area: fotovd;
@@ -149,6 +151,19 @@ main{
         }
 
         
+    }
+    .fc:hover{
+       background-color: $rojo; 
+       color: $blanco;
+    }
+    .vd:hover{
+        @extend .fc
+    }
+    .dis:hover{
+        @extend .fc
+    }
+    .bi:hover{
+        @extend .fc
     }
 
 

@@ -24,6 +24,26 @@ header{
           
     
             }
+        .logo{
+            animation-name: gira-logo;
+            animation-iteration-count: 1;
+            animation-duration: 5s;
+            animation-delay: 0s;
+        }    
+        @keyframes gira-logo {
+            0%{
+                transform: rotate(75deg);
+
+            }
+           
+            50%{
+                transform: rotate(180deg);
+
+            }
+            100%{
+                 transform: rotate(360deg);   
+            }
+        }
     
     
         .box_lista {
