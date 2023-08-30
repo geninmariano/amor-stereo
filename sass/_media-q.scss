@@ -606,3 +606,621 @@
 
             }
     }
+    //adaptacion header para tablet
+    @media only screen and (min-width:501px) and (max-width:900px){
+        header{
+        display: flex;
+        flex-direction: row;
+        
+        
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+       
+    
+    .box_lista{
+        
+        flex-direction: column;
+        display: grid;
+        grid-template-areas: 
+        "  nv"
+        "  nv1"
+        "  nv2"
+        "  nv3"
+        "  nv4"
+        ;
+        grid-template-rows:20px 20px 20px 20px 20px 20px ;
+        grid-template-columns:100%;
+    }
+    nav ul li a {
+        font-size: 0.8rem;
+       
+    }
+    .logo{
+        width: 20%;
+        
+
+    }
+    
+    .in{
+        grid-area: nv;
+      
+       
+        
+    }
+    .bio{
+        grid-area: nv1;
+      
+        
+    }
+    .disc{
+        grid-area: nv2;
+    }
+    .rec{
+        grid-area: nv3;
+    }
+    .fot{
+        grid-area: nv4;
+    
+    }
+    
+    
+    
+    .texto_p{
+        font-size: 1.5rem;
+    }
+    .box_lista{
+        margin-left: 0px;
+        margin-right: 10px;
+        
+    }
+    }
+}
+    // footer adaptado para tablet
+
+    @media only screen and (min-width:501px) and (max-width:900px){
+        footer{
+            
+            align-items: center;
+           justify-content: center;
+           
+        
+            
+            .redes_contacto{
+        
+               
+                display: grid;
+                grid-template-areas: 
+                "p  p p p"
+                "l1 l2 l3 l4";
+                grid-template-rows: 50% 50%;
+                grid-template-columns: 25% 25% 25% 25%;
+            }    
+            .frase_cierre{
+                grid-area: p;
+            }
+            .facebook{
+                grid-area: l1;
+               
+                
+            }
+            .instagram{
+                grid-area: l2;
+            }
+            .twitter{
+                grid-area: l3;
+            }
+            .mail{
+                grid-area: l4;
+            }
+            .frase_cierre{
+                font-size: 1.2rem;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+           
+       
+
+    }
+}
+    // adaptacion para table index
+    @media only screen and (min-width:501px) and (max-width:900px){
+        main{    
+            display: flex;
+           
+    
+        .medios_imagenes_index{
+            .titulo_index{
+                font-size: 2rem;
+            }
+            .texto_p{
+                font-size: 1rem;
+                
+               
+            }
+            .foto_p{
+                width: 60%;
+                height: 280px;
+                
+                
+            }
+            .li a{
+                font-size: 0.5rem;
+            }
+            .foto_fc{
+                width: 60%;
+                height: 280px;
+            }
+            .foto_vd{
+                width: 60%;
+                height: 280px;
+            }
+            .foto_dis{
+                width: 60%;
+                height: 280px;
+            }
+            .fotobi{
+                width: 60%;
+                height: 280px;
+            }
+                
+        display: grid;
+        grid-template-areas: 
+        "h1"
+        "fotop"
+        "p1"
+        "fotofc"
+        "navfc"
+        "fotovd"
+        "navvd"
+        "fotodis"
+        "navdis"
+        "fotobi"
+        "navbi";
+        grid-template-rows: 100px 250px 200px 300px 50px 300px 50px 300px 50px 300px 80px ;
+        grid-template-columns: 100%;
+        }
+        .titulo_index{
+            grid-area: h1;
+           
+        }
+        .foto_p{
+            grid-area: fotop;
+    
+        }
+        .texto_p{
+            grid-area: p1;
+            
+        }
+      
+        .foto_fc{
+            grid-area: fotofc;
+        }
+        .nav_fc{
+            grid-area: navfc;
+            
+        }
+        .foto.dv{
+            grid-area: fotovd;
+        }
+        .nav_vd{
+            grid-area: navvd;
+        }
+        .foto_dis{
+            grid-area: fotodis;
+        }
+        .nav_dis{
+            grid-area: navdis;
+        }
+        .fotobi{
+            grid-area: fotobi;
+        }
+        .nav_bi{
+            grid-area: navbi;
+        }
+    
+    
+    }
+
+
+    }
+// adaptacion de la pagina bibliografia para tablet
+    @media only screen and (min-width:501px) and (max-width:900px){
+      
+        main{
+
+       
+    
+            .texto_bibliografia{
+                
+             
+             
+        
+            display: grid;
+            grid-template-areas: 
+            "h1"
+            "f1"
+            "p1"
+            "f2"
+            "p2"
+            "f3"
+            "p3"
+            "f4"
+            "p4"
+            "f5"
+            "p5"
+            "f6"
+            "p6"
+            "f7"
+            "p7"
+            "f8"
+            "p8"
+            
+            ;
+            grid-template-rows: 150px 160px 350px 300px 600px 400px 750px 550px 970px 590px 700px 400px 1000px 300px 1500px 600px 950px;
+            grid-template-columns: 100%;
+            
+        
+            
+            }
+            .texto_bibliografia{
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+                
+            }
+            .titulo_bibliografia{
+                font-size: 1.5rem;
+                
+            }
+        
+            .foto_01{
+                width: 70%;
+                height: 250px;
+                
+                
+            }
+            
+            
+        
+            .foto_02{
+                
+                width: 70%;
+                height: 250px;
+                
+            }   
+            
+            .foto_03{
+                width: 70%;
+                height: 250px;
+                
+            }
+            
+            
+            .foto_04{
+                width: 70%;
+                height: 250px;
+                
+            }
+           
+            .foto_05{
+                width: 70%;
+                height: 250px;
+            
+            }
+           
+            .foto_06{
+                width: 70%;
+                height: 250px;
+                
+        
+            }
+            
+            .foto_07{
+                width: 70%;
+                height: 250px;
+                
+            }
+            
+            .foto_08{
+                width: 70%;
+                height: 250px;
+                
+                
+            }
+          
+        }
+        .texto_bibliografia{
+            background-color: $gris;
+            .parrafo_1{
+            font-size: 1rem;
+            background-color: $gris;
+            
+            padding: 10px;
+            }
+            .parrafo_2{
+                font-size: 1rem;
+                background-color: $gris;
+            }
+        
+            .parrafo_3{
+                font-size: 1rem;
+                background-color: $gris;
+                
+            }
+            .parrafo_4{
+                font-size: 1rem;
+                background-color: $gris;
+            }
+            .parrafo_5{
+                font-size: 1rem;
+                background-color: $gris;
+            }
+            .parrafo_6{
+                font-size: 1rem;
+                background-color: $gris;
+            }
+            .parrafo_7{
+                font-size: 1rem;
+                background-color: $gris;
+            }
+            .parrafo_8{
+                font-size: 1rem;
+                 background-color: $gris;
+            }
+        
+        } 
+
+    }
+
+    // modificar discografi para tablet
+    @media only screen and (min-width:501px) and (max-width:900px){
+        main{
+       
+            .discografia{
+            grid-template-areas: 
+            "t01"
+            "dis1"
+            "dis2"
+            "dis3"
+            "dis4"
+            "dis5"
+            "dis6"
+            "dis7"
+        
+            ;
+            grid-template-rows:70px 550px 550px 650px 550px 700px 700px 800px ;
+            grid-template-columns:100% ;
+        }
+        .discografia{
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+           
+        }
+        }
+        main .discografia{
+            .titulo_discografia{
+                font-size: 2rem;
+                text-align: center;
+                align-items: center;
+            }
+    
+        }
+        main .disco_1{
+            .titulo_1{
+                font-size: 1.2rem;
+            }
+            .texto_1{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+        
+        main .disco_2{
+            .titulo_2{
+                font-size: 1.2rem;
+            }
+            .texto_2{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+    
+         main .disco_3{
+            .titulo_3{
+                font-size: 1.2rem;
+            }
+            .texto_3{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+        main .disco_4{
+            .titulo_4{
+                font-size: 1.2rem;
+            }
+            .texto_4{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+        main .disco_5{
+            .titulo_5{
+                font-size: 1.2rem;
+            }
+            .texto_5{
+                font-size: 1rem;
+                text-align: justify;
+                
+            }
+        }
+        main .disco_6{
+            .titulo_6{
+                font-size: 1.2rem;
+            }
+            .texto_6{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+        main .disco_7{
+            .titulo_7{
+                font-size: 1.2rem;
+            }
+            .texto_7{
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+        
+
+
+    }
+    // adaptacion para tablet de la pagina videos y recitales
+    @media only screen and (min-width:501px) and (max-width:900px){
+        main{
+
+            .titulo_videos_recitales{
+                font-size: 1.5rem;
+            }
+         
+        .recitales{
+            display: grid;
+            grid-template-areas: 
+            "h1 "
+            "v1 "
+            "t1" 
+            "v2"
+            "t2"
+            "v3" 
+            "t3" 
+            "v4" 
+            "t4"
+            "v5" 
+            "t5" 
+            "v6" 
+            "t6"
+            ;
+            grid-template-rows: 50px 190px 250px 200px 300px 230px 300px 250px 250px 300px 300px 350px 380px;
+            grid-template-columns: 100%;
+    }
+   
+    
+
+    }
+
+
+    .recitales{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        .texto_r1997{
+            font-size: 1rem;
+            
+        }
+       
+       
+        .texto_mtv{
+            font-size: 1rem;
+        
+        }
+        .texto_puente{
+            font-size: 1rem;
+        }
+        .texto_zoom{
+            font-size: 1rem;
+        }
+        .texto_crimen{
+            font-size: 1rem;
+        }
+        .texto_ultimo_recital{
+            font-size: 1rem;
+        }
+    }
+    main .recital1997{
+        .texto_recital1997{
+            font-size: 1.5rem;
+            text-decoration: underline;
+        }
+    }
+     main   .mtv {
+
+     .titulo_mtv{
+            font-size: 1.5rem;
+            text-decoration: underline;
+        }
+    }
+     main .puente  {
+
+      .titulo_puente{
+            font-size: 1.5rem;
+            text-decoration: underline;
+        }
+    }
+        main .zoom{
+        .titulo_zoom{
+            font-size: 1.5rem;
+            text-decoration: underline;
+        }
+    }
+     main .crimen{
+           .titulo_crimen{
+            font-size: 1.5rem;
+            text-decoration: underline;
+        
+        }
+    }
+     main .ultimo_recital{
+
+       .titulo_ultimo_recital{
+            font-size: 1.5rem;
+            text-decoration: underline;
+        }
+     }
+
+
+    }
+    // adaptar pagina curiosidades para tablet
+    @media only screen and (min-width:501px) and (max-width:900px){
+        .carrusel-flex{
+            justify-content: center;
+            justify-self: center;
+            justify-content: center;
+            align-self: center;
+            justify-items: center;
+            display: grid;
+            grid-template-areas: 
+            "fv1" 
+            "fv2"
+            "fv3" 
+            "fv4"
+            ;
+            grid-template-rows:700px 650px 700px 700px ;
+            grid-template-columns:100% ;
+        }
+        .fotvid1{
+            grid-area: fv1;
+            padding: 10PX 10PX;
+            font-size: 0.8rem;
+            
+        }
+        .fotvid2{
+            grid-area: fv2;
+            margin-top: 10px;
+            align-self: flex-end;
+            
+            
+        }
+        .fotvid3{
+            grid-area: fv3;
+        }
+        .fotvid4{
+            grid-area: fv4;
+            
+        }
+}
