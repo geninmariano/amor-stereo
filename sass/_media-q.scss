@@ -1224,3 +1224,77 @@
             
         }
 }
+// adaptacion header para tablet
+
+@media only screen and (min-width:501px) and (max-width:900px){
+
+
+    header {
+        
+        display: flex;
+        flex-direction: row;
+        
+        
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+       
+    
+    .box_lista{
+        
+        flex-direction: column;
+        display: grid;
+        grid-template-areas: 
+        "  nv"
+        "  nv1"
+        "  nv2"
+        "  nv3"
+        "  nv4"
+        ;
+        grid-template-rows:20px 20px 20px 20px 20px 20px ;
+        grid-template-columns:100%;
+    }
+    nav ul li a {
+        font-size: 1rem;
+       
+    }
+    .logo{
+        width: 14%;
+        
+
+    }
+    
+    .in{
+        grid-area: nv;
+      
+       
+        
+    }
+    .bio{
+        grid-area: nv1;
+      
+        
+    }
+    .disc{
+        grid-area: nv2;
+    }
+    .rec{
+        grid-area: nv3;
+    }
+    .fot{
+        grid-area: nv4;
+    
+    }
+    
+    
+    
+    .texto_p{
+        font-size: 1.5rem;
+    }
+    .box_lista{
+        margin-left: 0px;
+        margin-right: 10px;
+        
+    }
+}
+}

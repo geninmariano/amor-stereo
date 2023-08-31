@@ -1436,5 +1436,49 @@ main .disco_7 {
     grid-area: fv4;
   }
 }
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  header .box_lista {
+    flex-direction: column;
+    display: grid;
+    grid-template-areas: "  nv" "  nv1" "  nv2" "  nv3" "  nv4";
+    grid-template-rows: 20px 20px 20px 20px 20px 20px;
+    grid-template-columns: 100%;
+  }
+  header nav ul li a {
+    font-size: 1rem;
+  }
+  header .logo {
+    width: 14%;
+  }
+  header .in, header .box_lista .bio, header .box_lista .disc, header .box_lista .rec, header .box_lista fot {
+    grid-area: nv;
+  }
+  header .bio {
+    grid-area: nv1;
+  }
+  header .disc {
+    grid-area: nv2;
+  }
+  header .rec {
+    grid-area: nv3;
+  }
+  header .fot {
+    grid-area: nv4;
+  }
+  header .texto_p {
+    font-size: 1.5rem;
+  }
+  header .box_lista {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
 
 /*# sourceMappingURL=estilos-sass.css.map */
